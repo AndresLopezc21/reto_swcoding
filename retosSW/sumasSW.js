@@ -21,8 +21,8 @@ function sumNumbers(a, b) {
 
 // Pruebas
 console.log(sumNumbers(5, 2));       // sum
-//console.log(sumNumbers(5, 2.2));       // decimal
-//console.log(sumNumbers("10", 5));      // string
-//console.log(sumNumbers(8, null));      // null
-//console.log(sumNumbers(true, 3));      // boolean
-//console.log(sumNumbers([], {}));       // array, b object (a falla primero)
+console.log(sumNumbers(5, 2.2));     // decimal
+console.log(sumNumbers("10", 5));    // string
+console.log(sumNumbers(8, null));    // null
+console.log(sumNumbers(true, 3));    // boolean
+console.log(sumNumbers(5, {}));      // array, b object (a falla primero)
