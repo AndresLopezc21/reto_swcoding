@@ -1,10 +1,10 @@
-function sumarNumeros(a, b) {
+function sumNumbers(a, b) {
     function paramValidator(param, number) {
         if (param == null) return `${number} no es un número`;
         if (typeof param !== 'number') return `${number} es ${typeof param}`;
         if (isNaN(param)) return `${number} no es un número válido`;
         if (!Number.isInteger(param)) return `${number} es un número decimal`;
-        return null; // válido
+        return null; 
     }
 
     const errorA = paramValidator(a, 'a');
@@ -20,9 +20,9 @@ function sumarNumeros(a, b) {
 }
 
 // Pruebas
-console.log(sumarNumeros(5, 2));       // sum
-//console.log(sumarNumeros(5, 2.2));       // decimal
-//console.log(sumarNumeros("10", 5));      // string
-//console.log(sumarNumeros(8, null));      // null
-//console.log(sumarNumeros(true, 3));      // boolean
-//console.log(sumarNumeros([], {}));       // array, b object (a falla primero)
+console.log(sumNumbers(5, 2));       // sum
+//console.log(sumNumbers(5, 2.2));       // decimal
+//console.log(sumNumbers("10", 5));      // string
+//console.log(sumNumbers(8, null));      // null
+//console.log(sumNumbers(true, 3));      // boolean
+//console.log(sumNumbers([], {}));       // array, b object (a falla primero)
